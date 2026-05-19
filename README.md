@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# 🤖 AI Support Chatbot — TechGear Store Demo
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_GPT--4o--mini-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-First, run the development server:
+> A fully functional AI-powered customer support chatbot embedded in a demo e-commerce store. Built as a portfolio project to showcase real-world AI automation for Shopify and e-commerce clients.
+
+---
+
+## Features
+
+- Live AI Chat — GPT-4o-mini answers product questions, shipping, returns and warranty
+- Demo Store — Realistic TechGear product catalog with 5 products
+- Instant Responses — Typing indicator, auto-scroll, Enter to send
+- Fully Responsive — Works on mobile, tablet and desktop
+- Secure — API key never exposed to client
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| AI Model | OpenAI GPT-4o-mini |
+| Deployment | Vercel |
+
+---
+
+## Run Locally
 
 ```bash
+git clone https://github.com/mustuqalbi/ai-support-bot.git
+cd ai-support-bot
+npm install
+echo "OPENAI_API_KEY=your_key_here" > .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 and click the chat bubble (bottom-right) to talk to the AI.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── api/chat/route.ts    # OpenAI API endpoint
+│   └── page.tsx             # Demo store page
+├── components/
+│   └── ChatWidget.tsx       # Chat bubble + modal UI
+└── lib/
+    └── storeData.ts         # Product catalog + AI system prompt
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built by
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Ghulam Mustafa** — AI Automation Engineer
 
-## Deploy on Vercel
+[![Portfolio](https://img.shields.io/badge/Portfolio-ghulammustafa.dev-00D9FF?style=for-the-badge)](https://ghulammustafa.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-gmustafa--dev-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/gmustafa-dev)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Want a custom AI chatbot for your store? [Book a free call](https://cal.com/ghulammustafa/20min)

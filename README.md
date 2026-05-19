@@ -6,6 +6,8 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
+### 🔴 Live Demo: [ai-support-bot-green.vercel.app](https://ai-support-bot-green.vercel.app/)
+
 > A fully functional AI-powered customer support chatbot embedded in a demo e-commerce store. Built as a portfolio project to showcase real-world AI automation for Shopify and e-commerce clients.
 
 ---
